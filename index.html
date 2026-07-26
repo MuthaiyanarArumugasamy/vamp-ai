@@ -274,6 +274,101 @@
   }
   #panel-tutor #tutorThread{ flex:1; overflow-y:auto; padding:16px 2px; }
 
+  /* FORUM */
+  #panel-forum{ padding-top:14px; }
+  .forum-composer{ display:flex; gap:10px; align-items:flex-end; padding:2px; flex-shrink:0; }
+  .forum-composer textarea{
+    flex:1; background:var(--plum); border:1px solid var(--rule); color:var(--parchment);
+    padding:11px 13px; border-radius:8px; font-size:14px; font-family:'Inter',sans-serif; resize:vertical;
+  }
+  .forum-status{ font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--gold-soft); padding:6px 2px; min-height:16px; flex-shrink:0; }
+  .forum-post{
+    background:var(--plum); border:1px solid var(--rule); border-radius:8px;
+    padding:14px 16px; margin:0 2px 12px;
+  }
+  .forum-post .forum-meta{
+    font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--gold-soft);
+    display:flex; justify-content:space-between; margin-bottom:8px;
+  }
+  .forum-post p{ margin:0; font-size:14px; line-height:1.6; color:var(--parchment); white-space:pre-wrap; }
+  .forum-empty{ text-align:center; color:#6B6268; font-size:13px; font-family:'IBM Plex Mono',monospace; padding:30px; }
+
+  /* JOBS */
+  #panel-jobs{ padding-top:14px; }
+  .jobs-composer{ display:flex; flex-direction:column; gap:8px; padding:2px 2px 10px; flex-shrink:0; }
+  .jobs-composer input, .jobs-composer textarea{
+    background:var(--plum); border:1px solid var(--rule); color:var(--parchment);
+    padding:10px 12px; border-radius:8px; font-size:13.5px; font-family:'Inter',sans-serif;
+  }
+  .job-post{
+    background:var(--plum); border:1px solid var(--rule); border-radius:8px;
+    padding:16px; margin:0 2px 12px;
+  }
+  .job-post h4{ font-family:'Cormorant Garamond',serif; font-size:19px; margin:0 0 4px; }
+  .job-post .job-company{ font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:var(--gold-soft); margin-bottom:8px; }
+  .job-post p{ margin:0 0 8px; font-size:13.5px; line-height:1.55; color:var(--fog); white-space:pre-wrap; }
+  .job-post .job-apply{ font-size:12.5px; color:var(--parchment); }
+  .job-post .job-apply b{ color:var(--gold-soft); }
+
+  /* VAMPWORK */
+  #panel-vampwork{ padding-top:14px; }
+  #panel-vampwork .jobs-composer select{
+    background:var(--plum); border:1px solid var(--rule); color:var(--parchment);
+    padding:10px 12px; border-radius:8px; font-size:13.5px; font-family:'Inter',sans-serif;
+  }
+  .vw-filters{ display:flex; gap:6px; padding:4px 2px 12px; flex-shrink:0; }
+  .vw-filter-btn{
+    background:none; border:1px solid var(--rule); color:var(--fog);
+    font-family:'IBM Plex Mono',monospace; font-size:11.5px; text-transform:uppercase;
+    letter-spacing:.04em; padding:7px 14px; border-radius:6px; cursor:pointer; transition:all .15s ease;
+  }
+  .vw-filter-btn.current{ color:var(--gold-soft); background:var(--plum); border-color:var(--gold); }
+  .vw-filter-btn:hover{ color:var(--parchment); }
+  .vw-post{
+    background:var(--plum); border:1px solid var(--rule); border-radius:8px;
+    padding:16px; margin:0 2px 12px; position:relative;
+  }
+  .vw-badge{
+    display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:10px; text-transform:uppercase;
+    letter-spacing:.04em; padding:3px 9px; border-radius:20px; margin-bottom:8px;
+  }
+  .vw-badge.hiring{ background:rgba(122,31,61,0.3); color:var(--wine-bright); border:1px solid var(--wine-bright); }
+  .vw-badge.available{ background:rgba(201,162,39,0.15); color:var(--gold-soft); border:1px solid var(--gold); }
+  .vw-post h4{ font-family:'Cormorant Garamond',serif; font-size:19px; margin:0 0 4px; }
+  .vw-post .vw-budget{ font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--gold-soft); margin-bottom:8px; }
+  .vw-post p{ margin:0 0 8px; font-size:13.5px; line-height:1.55; color:var(--fog); white-space:pre-wrap; }
+  .vw-post .vw-contact{ font-size:12.5px; color:var(--parchment); margin-bottom:10px; }
+  .vw-post .vw-contact b{ color:var(--gold-soft); }
+  .vw-interested-btn{ font-size:12px; padding:7px 14px; }
+  .vw-replies{ margin-top:10px; border-top:1px solid var(--rule); padding-top:10px; }
+  .vw-reply{ font-size:12.5px; color:var(--fog); margin-bottom:6px; }
+  .vw-reply b{ color:var(--gold-soft); }
+
+  /* DASHBOARD / ADMIN */
+  .dash-account{ background:var(--plum); border:1px solid var(--rule); border-radius:10px; padding:18px 20px; margin-bottom:22px; }
+  .dash-account h3{ font-family:'Cormorant Garamond',serif; font-size:20px; margin:0 0 12px; }
+  .dash-row{ display:flex; justify-content:space-between; padding:6px 0; border-top:1px solid var(--rule); font-size:13.5px; }
+  .dash-row:first-of-type{ border-top:none; }
+  .dash-row span{ color:var(--fog); }
+  .dash-row b{ color:var(--parchment); font-weight:600; }
+  .dash-note{ font-size:11.5px; color:#6B6268; margin:12px 0 0; font-style:italic; }
+  .dash-section{ margin-bottom:24px; }
+  .dash-section h3{ font-family:'Cinzel',serif; font-size:14px; letter-spacing:.04em; color:var(--gold-soft); text-transform:uppercase; margin:0 0 10px; }
+  .dash-list{ display:flex; flex-direction:column; gap:8px; }
+  .dash-item{
+    background:var(--plum); border:1px solid var(--rule); border-radius:8px;
+    padding:12px 14px; display:flex; justify-content:space-between; align-items:flex-start; gap:10px;
+  }
+  .dash-item .dash-item-text{ font-size:13px; color:var(--fog); flex:1; }
+  .dash-item .dash-item-text b{ color:var(--parchment); display:block; margin-bottom:2px; }
+  .dash-delete-btn{
+    flex-shrink:0; background:none; border:1px solid var(--wine-bright); color:var(--wine-bright);
+    font-family:'IBM Plex Mono',monospace; font-size:10.5px; text-transform:uppercase; padding:5px 10px;
+    border-radius:4px; cursor:pointer;
+  }
+  .dash-delete-btn:hover{ background:var(--wine-bright); color:var(--parchment); }
+  .dash-empty{ color:#6B6268; font-size:12.5px; font-family:'IBM Plex Mono',monospace; }
+
   /* SHOP */
   .shop-grid{
     display:grid; grid-template-columns:repeat(auto-fill, minmax(190px, 1fr));
@@ -479,6 +574,11 @@
       <button class="app-tab" data-panel="tutor">Tutor</button>
       <button class="app-tab" data-panel="shop">Shop</button>
       <button class="app-tab" data-panel="ebooks">Ebooks</button>
+      <button class="app-tab" data-panel="forum">Forum</button>
+      <button class="app-tab" data-panel="jobs">Jobs</button>
+      <button class="app-tab" data-panel="vampwork">VampWork</button>
+      <button class="app-tab" data-panel="dashboard">Dashboard</button>
+      <button class="app-tab" data-panel="admin" id="adminTabBtn" style="display:none;">Admin</button>
     </div>
 
     <div class="app-panel active" id="panel-chat">
@@ -518,6 +618,9 @@
           <input type="range" id="satSlider" min="0" max="200" value="100">
 
           <label class="slider-label"><input type="checkbox" id="grayscaleToggle"> Black &amp; white</label>
+
+          <button class="btn btn-ghost" id="removeBgBtn" style="width:100%;">Remove background</button>
+          <div class="product-status" id="bgStatus"></div>
 
           <div class="text-overlay-row">
             <input type="text" id="overlayText" placeholder="Add text, then click the photo to place it">
@@ -571,6 +674,92 @@
 
     <div class="app-panel" id="panel-ebooks" style="overflow-y:auto;">
       <div class="shop-grid" id="ebooksGrid"></div>
+    </div>
+
+    <div class="app-panel" id="panel-forum">
+      <div class="forum-composer">
+        <textarea id="forumInput" rows="2" placeholder="Share something with the community..."></textarea>
+        <button class="btn btn-primary" id="forumPostBtn">Post</button>
+      </div>
+      <div class="forum-status" id="forumStatus"></div>
+      <div id="forumThread" style="flex:1; overflow-y:auto;"></div>
+    </div>
+
+    <div class="app-panel" id="panel-jobs">
+      <div class="jobs-composer">
+        <input type="text" id="jobTitle" placeholder="Job title">
+        <input type="text" id="jobCompany" placeholder="Company">
+        <textarea id="jobDesc" rows="2" placeholder="Short description"></textarea>
+        <input type="text" id="jobContact" placeholder="How to apply (email or link)">
+        <button class="btn btn-primary" id="jobPostBtn">Post job</button>
+      </div>
+      <div class="forum-status" id="jobStatus"></div>
+      <div id="jobsThread" style="flex:1; overflow-y:auto;"></div>
+    </div>
+
+    <div class="app-panel" id="panel-vampwork">
+      <div class="jobs-composer">
+        <select id="vwType">
+          <option value="hiring">I'm hiring — post a project</option>
+          <option value="available">I'm available — offer my services</option>
+        </select>
+        <input type="text" id="vwTitle" placeholder="Title (e.g. 'Need a logo designed' or 'Freelance copywriter available')">
+        <input type="text" id="vwBudget" placeholder="Budget or rate (e.g. '$300 fixed' or '$20/hr')">
+        <textarea id="vwDesc" rows="3" placeholder="Details"></textarea>
+        <input type="text" id="vwContact" placeholder="Contact (email or link)">
+        <button class="btn btn-primary" id="vwPostBtn">Post</button>
+      </div>
+      <div class="forum-status" id="vwStatus"></div>
+      <div class="vw-filters">
+        <button class="vw-filter-btn current" data-vwfilter="all">All</button>
+        <button class="vw-filter-btn" data-vwfilter="hiring">Hiring</button>
+        <button class="vw-filter-btn" data-vwfilter="available">Available</button>
+      </div>
+      <div id="vwThread" style="flex:1; overflow-y:auto;"></div>
+    </div>
+
+    <div class="app-panel" id="panel-dashboard" style="overflow-y:auto; padding:20px 4px;">
+      <div class="dash-account">
+        <h3>Your Account</h3>
+        <div class="dash-row"><span>Name</span><b id="dashName">—</b></div>
+        <div class="dash-row"><span>Email</span><b id="dashEmail">—</b></div>
+        <div class="dash-row"><span>Plan</span><b id="dashPlan">—</b></div>
+        <button class="btn btn-ghost" data-goto="pricing" style="margin-top:10px;">Change plan</button>
+      </div>
+      <div class="dash-section">
+        <h3>My Forum Posts</h3>
+        <div id="dashForum" class="dash-list"></div>
+      </div>
+      <div class="dash-section">
+        <h3>My Job Postings</h3>
+        <div id="dashJobs" class="dash-list"></div>
+      </div>
+      <div class="dash-section">
+        <h3>My VampWork Listings</h3>
+        <div id="dashVampWork" class="dash-list"></div>
+      </div>
+    </div>
+
+    <div class="app-panel" id="panel-admin" style="overflow-y:auto; padding:20px 4px;">
+      <div class="dash-account">
+        <h3>Admin — Community Overview</h3>
+        <div class="dash-row"><span>Forum posts</span><b id="adminForumCount">—</b></div>
+        <div class="dash-row"><span>Job postings</span><b id="adminJobsCount">—</b></div>
+        <div class="dash-row"><span>VampWork listings</span><b id="adminVwCount">—</b></div>
+        <p class="dash-note">Note: this only counts shared community content. Individual user accounts are stored per-browser and can't be listed here.</p>
+      </div>
+      <div class="dash-section">
+        <h3>Moderate Forum</h3>
+        <div id="adminForumList" class="dash-list"></div>
+      </div>
+      <div class="dash-section">
+        <h3>Moderate Jobs</h3>
+        <div id="adminJobsList" class="dash-list"></div>
+      </div>
+      <div class="dash-section">
+        <h3>Moderate VampWork</h3>
+        <div id="adminVwList" class="dash-list"></div>
+      </div>
     </div>
   </div>
 </section>
@@ -768,10 +957,17 @@ document.getElementById('registerForm').addEventListener('submit', async (e)=>{
 
 function historyKey(email){ return 'history:' + email.toLowerCase().trim(); }
 
+const ADMIN_EMAILS = [
+  // Add your email here, lowercase, e.g. 'you@example.com'
+];
+
 async function startSession(){
   document.getElementById('userLabel').textContent = currentUser.name;
   document.getElementById('planLabel').textContent = currentUser.plan;
   goto('chat');
+
+  const isAdmin = currentUser.email && ADMIN_EMAILS.includes(currentUser.email.toLowerCase().trim());
+  document.getElementById('adminTabBtn').style.display = isAdmin ? 'inline-block' : 'none';
 
   thread.innerHTML = '';
   history_ = [];
@@ -885,6 +1081,11 @@ document.querySelectorAll('.app-tab').forEach(tab=>{
     document.querySelectorAll('.app-panel').forEach(p=>p.classList.toggle('active', p.id === 'panel-'+tab.dataset.panel));
     if(tab.dataset.panel === 'shop') renderShop();
     if(tab.dataset.panel === 'ebooks') renderEbooks();
+    if(tab.dataset.panel === 'forum') loadForum();
+    if(tab.dataset.panel === 'jobs') loadJobs();
+    if(tab.dataset.panel === 'vampwork') loadVampWork();
+    if(tab.dataset.panel === 'dashboard') loadDashboard();
+    if(tab.dataset.panel === 'admin') loadAdmin();
   });
 });
 
@@ -989,6 +1190,78 @@ document.getElementById('downloadPhotoBtn').addEventListener('click', ()=>{
   link.download = 'vamp-ai-edit.png';
   link.href = photoCanvas.toDataURL('image/png');
   link.click();
+});
+
+// ---------- background removal (client-side AI model, no paid API) ----------
+let bodyPixLibsPromise = null;
+let bodyPixNet = null;
+
+function loadScriptTag(src){
+  return new Promise((resolve, reject)=>{
+    const s = document.createElement('script');
+    s.src = src;
+    s.onload = resolve;
+    s.onerror = reject;
+    document.head.appendChild(s);
+  });
+}
+
+function loadBodyPixLibs(){
+  if(bodyPixLibsPromise) return bodyPixLibsPromise;
+  bodyPixLibsPromise = (async ()=>{
+    if(typeof tf === 'undefined'){
+      await loadScriptTag('https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.10.0/dist/tf.min.js');
+    }
+    if(typeof bodyPix === 'undefined'){
+      await loadScriptTag('https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@2.2.0/dist/body-pix.min.js');
+    }
+  })();
+  return bodyPixLibsPromise;
+}
+
+document.getElementById('removeBgBtn').addEventListener('click', async ()=>{
+  const status = document.getElementById('bgStatus');
+  const btn = document.getElementById('removeBgBtn');
+  if(!baseImage){ status.textContent = 'Upload a photo first.'; return; }
+
+  btn.disabled = true;
+  status.textContent = 'Loading model (first time only, ~5–10s)…';
+  try{
+    await loadBodyPixLibs();
+    if(!bodyPixNet){
+      bodyPixNet = await bodyPix.load({ architecture: 'MobileNetV1', outputStride: 16, multiplier: 0.75, quantBytes: 2 });
+    }
+    status.textContent = 'Removing background…';
+
+    const segmentation = await bodyPixNet.segmentPerson(baseImage, {
+      internalResolution: 'medium', segmentationThreshold: 0.7
+    });
+
+    const off = document.createElement('canvas');
+    off.width = baseImage.width; off.height = baseImage.height;
+    const octx = off.getContext('2d');
+    octx.drawImage(baseImage, 0, 0);
+    const imgData = octx.getImageData(0, 0, off.width, off.height);
+    for(let i = 0; i < segmentation.data.length; i++){
+      if(segmentation.data[i] === 0){
+        imgData.data[i * 4 + 3] = 0; // transparent where it's not a detected person
+      }
+    }
+    octx.putImageData(imgData, 0, 0);
+
+    const newImg = new Image();
+    newImg.onload = ()=>{
+      baseImage = newImg;
+      redrawPhoto();
+      status.textContent = 'Background removed.';
+      btn.disabled = false;
+    };
+    newImg.src = off.toDataURL('image/png');
+  } catch(err){
+    console.error(err);
+    status.textContent = "Couldn't remove the background — try a clearer photo with a person in it.";
+    btn.disabled = false;
+  }
 });
 
 // ---------- website builder ----------
@@ -1326,156 +1599,337 @@ async function renderEbookPayPalButton(book){
   }).render('#paypal-ebook-' + book.id);
 }
 
-// ---------- chat ----------
-const thread = document.getElementById('thread');
-const input = document.getElementById('input');
-const sendBtn = document.getElementById('sendBtn');
-let history_ = [];
-let busy = false;
+// ---------- forum (shared across everyone using the site) ----------
+const FORUM_KEY = 'forum:posts';
 
-input.addEventListener('input', ()=>{
-  input.style.height = 'auto';
-  input.style.height = Math.min(input.scrollHeight, 120) + 'px';
-});
-input.addEventListener('keydown', (e)=>{
-  if(e.key === 'Enter' && !e.shiftKey){ e.preventDefault(); send(); }
-});
-sendBtn.addEventListener('click', send);
+function escapeHtmlForum(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
-function escapeHtml(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+async function loadForum(){
+  const thread = document.getElementById('forumThread');
+  thread.innerHTML = '<div class="forum-empty">Loading posts…</div>';
+  let posts = [];
+  try{
+    const res = await window.storage.get(FORUM_KEY, true); // shared: true — visible to everyone
+    posts = res ? JSON.parse(res.value) : [];
+  } catch(err){ posts = []; }
 
-function renderMarkdown(text){
-  const blocks = [];
-  text = text.replace(/```(\w*)\n([\s\S]*?)```/g, (m, lang, code)=>{
-    blocks.push(`<pre><code>${escapeHtml(code.trim())}</code></pre>`);
-    return `\u0000${blocks.length-1}\u0000`;
+  if(posts.length === 0){
+    thread.innerHTML = '<div class="forum-empty">No posts yet — be the first to say something.</div>';
+    return;
+  }
+  thread.innerHTML = '';
+  posts.slice().reverse().forEach(p=>{
+    const div = document.createElement('div');
+    div.className = 'forum-post';
+    const when = new Date(p.time).toLocaleString();
+    div.innerHTML = `<div class="forum-meta"><span>${escapeHtmlForum(p.author)}</span><span>${when}</span></div><p>${escapeHtmlForum(p.content)}</p>`;
+    thread.appendChild(div);
   });
-  let html = escapeHtml(text);
-  html = html.replace(/\u0000(\d+)\u0000/g, (m,i)=> blocks[i]);
-  html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-  html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
-  const lines = html.split('\n');
-  let out = [], para = [];
-  function flush(){ if(para.length){ out.push('<p>'+para.join(' ')+'</p>'); para=[]; } }
-  for(const line of lines){
-    const t = line.trim();
-    if(t.startsWith('<pre>')){ flush(); out.push(t); }
-    else if(t===''){ flush(); }
-    else para.push(t);
-  }
-  flush();
-  return out.join('\n');
 }
 
-function addMessage(role, content){
-  const div = document.createElement('div');
-  div.className = 'msg ' + role;
-  div.innerHTML = `<div class="who2">${role==='user'?'You':'Vamp AI'}</div><div class="bubble">${role==='assistant'?renderMarkdown(content):'<p>'+escapeHtml(content)+'</p>'}</div>`;
-  thread.appendChild(div);
-  thread.scrollTop = thread.scrollHeight;
-}
-function addThinking(){
-  const div = document.createElement('div');
-  div.className = 'msg assistant'; div.id = 'thinkingMsg';
-  div.innerHTML = `<div class="who2">Vamp AI</div><div class="bubble"><div class="thinking"><span></span><span></span><span></span></div></div>`;
-  thread.appendChild(div); thread.scrollTop = thread.scrollHeight;
-}
-
-function addLimitNotice(msg){
-  const div = document.createElement('div');
-  div.className = 'msg assistant';
-  div.innerHTML = `<div class="who2">Vamp AI</div><div class="bubble"><p>${msg}</p></div>`;
-  thread.appendChild(div);
-  thread.scrollTop = thread.scrollHeight;
-}
-
-let guestMessageCount = 0;
-const GUEST_LIMIT = 10;
-const FREE_DAILY_LIMIT = 30;
-
-function todayStr(){ return new Date().toISOString().slice(0,10); }
-function usageKey(email){ return 'usage:' + email.toLowerCase().trim(); }
-
-// returns { allowed: bool, remaining: number|null } and increments usage as a side effect when allowed
-async function checkAndConsumeQuota(){
-  if(!currentUser){
-    return { allowed: true, remaining: null }; // shouldn't happen, chat is gated
-  }
-  if(currentUser.plan === 'Guest'){
-    if(guestMessageCount >= GUEST_LIMIT){
-      return { allowed: false, reason: 'guest' };
-    }
-    guestMessageCount++;
-    return { allowed: true, remaining: GUEST_LIMIT - guestMessageCount };
-  }
-  if(currentUser.plan === 'Nightwalker'){
-    let usage = { date: todayStr(), count: 0 };
-    try{
-      const res = await window.storage.get(usageKey(currentUser.email), false);
-      if(res) usage = JSON.parse(res.value);
-    } catch(err){ /* first use */ }
-    if(usage.date !== todayStr()){ usage = { date: todayStr(), count: 0 }; }
-    if(usage.count >= FREE_DAILY_LIMIT){
-      return { allowed: false, reason: 'free' };
-    }
-    usage.count++;
-    try{ await window.storage.set(usageKey(currentUser.email), JSON.stringify(usage), false); } catch(err){ console.error(err); }
-    return { allowed: true, remaining: FREE_DAILY_LIMIT - usage.count };
-  }
-  // Bloodline, Coven — unlimited
-  return { allowed: true, remaining: null };
-}
-
-async function send(){
+document.getElementById('forumPostBtn').addEventListener('click', async ()=>{
+  const input = document.getElementById('forumInput');
+  const status = document.getElementById('forumStatus');
   const text = input.value.trim();
-  if(!text || busy) return;
 
-  const quota = await checkAndConsumeQuota();
-  if(!quota.allowed){
-    if(quota.reason === 'guest'){
-      addLimitNotice(`You've reached the ${GUEST_LIMIT}-message limit for guest chats. <button data-goto="register" style="background:none;border:none;color:var(--gold-soft);text-decoration:underline;cursor:pointer;padding:0;font:inherit;">Create a free account</button> to keep going.`);
-    } else {
-      addLimitNotice(`You've used all ${FREE_DAILY_LIMIT} messages on the Nightwalker plan for today. It resets tomorrow, or <button data-goto="pricing" style="background:none;border:none;color:var(--gold-soft);text-decoration:underline;cursor:pointer;padding:0;font:inherit;">upgrade to Bloodline</button> for unlimited messages.`);
-    }
-    document.querySelectorAll('#thread [data-goto]').forEach(b=>{
-      b.addEventListener('click', ()=> goto(b.dataset.goto));
-    });
+  if(!currentUser || currentUser.plan === 'Guest'){
+    status.textContent = 'Log in to post to the forum.';
+    return;
+  }
+  if(!text) return;
+
+  status.textContent = 'Posting…';
+  try{
+    const res = await window.storage.get(FORUM_KEY, true);
+    const posts = res ? JSON.parse(res.value) : [];
+    posts.push({ author: currentUser.name, content: text, time: Date.now() });
+    await window.storage.set(FORUM_KEY, JSON.stringify(posts), true);
+    input.value = '';
+    status.textContent = '';
+    loadForum();
+  } catch(err){
+    console.error(err);
+    status.textContent = "Couldn't post — try again.";
+  }
+});
+
+// ---------- jobs board (shared across everyone using the site) ----------
+const JOBS_KEY = 'jobs:postings';
+
+async function loadJobs(){
+  const thread = document.getElementById('jobsThread');
+  thread.innerHTML = '<div class="forum-empty">Loading jobs…</div>';
+  let jobs = [];
+  try{
+    const res = await window.storage.get(JOBS_KEY, true);
+    jobs = res ? JSON.parse(res.value) : [];
+  } catch(err){ jobs = []; }
+
+  if(jobs.length === 0){
+    thread.innerHTML = '<div class="forum-empty">No jobs posted yet.</div>';
+    return;
+  }
+  thread.innerHTML = '';
+  jobs.slice().reverse().forEach(j=>{
+    const div = document.createElement('div');
+    div.className = 'job-post';
+    const when = new Date(j.time).toLocaleDateString();
+    div.innerHTML = `
+      <h4>${escapeHtmlForum(j.title)}</h4>
+      <div class="job-company">${escapeHtmlForum(j.company)} · posted ${when}</div>
+      <p>${escapeHtmlForum(j.desc)}</p>
+      <div class="job-apply"><b>Apply:</b> ${escapeHtmlForum(j.contact)}</div>
+    `;
+    thread.appendChild(div);
+  });
+}
+
+document.getElementById('jobPostBtn').addEventListener('click', async ()=>{
+  const status = document.getElementById('jobStatus');
+  const title = document.getElementById('jobTitle').value.trim();
+  const company = document.getElementById('jobCompany').value.trim();
+  const desc = document.getElementById('jobDesc').value.trim();
+  const contact = document.getElementById('jobContact').value.trim();
+
+  if(!currentUser || currentUser.plan === 'Guest'){
+    status.textContent = 'Log in to post a job.';
+    return;
+  }
+  if(!title || !company || !contact){
+    status.textContent = 'Job title, company, and how to apply are required.';
     return;
   }
 
-  busy = true; sendBtn.disabled = true;
-  input.value=''; input.style.height='auto';
-  addMessage('user', text);
-  history_.push({role:'user', content:text});
-  addThinking();
+  status.textContent = 'Posting…';
   try{
-    const response = await fetch("/api/chat", {
-      method:"POST",
-      headers:{"Content-Type":"application/json"},
-      body: JSON.stringify({
-        system:"You are Vamp AI, a confident, articulate conversational companion with a subtle gothic-elegant voice — think a witty, well-read night owl, not a cartoon vampire. Keep it tasteful: no cheesy 'blood' puns. Be direct, warm where useful, willing to disagree, concise. Light markdown only.",
-        messages: history_
-      })
-    });
-    const data = await response.json();
-    document.getElementById('thinkingMsg')?.remove();
-    let out = data.content ? data.content.map(b=>b.type==='text'?b.text:'').join('\n') : '';
-    if(!out) out = "That one slipped past me — try rephrasing?";
-    addMessage('assistant', out);
-    history_.push({role:'assistant', content: out});
-    if(currentUser && currentUser.email){
-      try{
-        await window.storage.set(historyKey(currentUser.email), JSON.stringify(history_), false);
-      } catch(err){ console.error('Could not save chat history:', err); }
-    }
+    const res = await window.storage.get(JOBS_KEY, true);
+    const jobs = res ? JSON.parse(res.value) : [];
+    jobs.push({ title, company, desc, contact, time: Date.now(), postedBy: currentUser.name });
+    await window.storage.set(JOBS_KEY, JSON.stringify(jobs), true);
+    document.getElementById('jobTitle').value = '';
+    document.getElementById('jobCompany').value = '';
+    document.getElementById('jobDesc').value = '';
+    document.getElementById('jobContact').value = '';
+    status.textContent = '';
+    loadJobs();
   } catch(err){
-    document.getElementById('thinkingMsg')?.remove();
-    addMessage('assistant', "Something went wrong reaching the model. Try again in a moment.");
     console.error(err);
-  } finally {
-    busy = false; sendBtn.disabled = false; input.focus();
+    status.textContent = "Couldn't post — try again.";
   }
+});
+
+// ---------- vampwork (freelance marketplace, shared) ----------
+const VAMPWORK_KEY = 'vampwork:listings';
+let vwCurrentFilter = 'all';
+
+async function loadVampWork(){
+  const thread = document.getElementById('vwThread');
+  thread.innerHTML = '<div class="forum-empty">Loading listings…</div>';
+  let listings = [];
+  try{
+    const res = await window.storage.get(VAMPWORK_KEY, true);
+    listings = res ? JSON.parse(res.value) : [];
+  } catch(err){ listings = []; }
+
+  const filtered = vwCurrentFilter === 'all' ? listings : listings.filter(l => l.type === vwCurrentFilter);
+
+  if(filtered.length === 0){
+    thread.innerHTML = '<div class="forum-empty">No listings yet in this category.</div>';
+    return;
+  }
+  thread.innerHTML = '';
+  filtered.slice().reverse().forEach(l=>{
+    const div = document.createElement('div');
+    div.className = 'vw-post';
+    const when = new Date(l.time).toLocaleDateString();
+    const badgeLabel = l.type === 'hiring' ? 'Hiring' : 'Available';
+    const repliesHtml = (l.replies || []).map(r =>
+      `<div class="vw-reply"><b>${escapeHtmlForum(r.author)}:</b> ${escapeHtmlForum(r.message)}</div>`
+    ).join('');
+    div.innerHTML = `
+      <span class="vw-badge ${l.type}">${badgeLabel}</span>
+      <h4>${escapeHtmlForum(l.title)}</h4>
+      <div class="vw-budget">${escapeHtmlForum(l.budget)} · posted ${when} by ${escapeHtmlForum(l.postedBy)}</div>
+      <p>${escapeHtmlForum(l.desc)}</p>
+      <div class="vw-contact"><b>Contact:</b> ${escapeHtmlForum(l.contact)}</div>
+      <button class="btn btn-ghost vw-interested-btn" data-vwid="${l.id}">I'm interested</button>
+      <div class="vw-replies">${repliesHtml}</div>
+    `;
+    thread.appendChild(div);
+  });
+
+  document.querySelectorAll('.vw-interested-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=> vwReply(btn.dataset.vwid));
+  });
 }
-</script>
-</body>
-</html>
+
+async function vwReply(listingId){
+  if(!currentUser || currentUser.plan === 'Guest'){
+    document.getElementById('vwStatus').textContent = 'Log in to respond to a listing.';
+    return;
+  }
+  const message = prompt('Your message to include with your interest:');
+  if(!message || !message.trim()) return;
+
+  try{
+    const res = await window.storage.get(VAMPWORK_KEY, true);
+    const listings = res ? JSON.parse(res.value) : [];
+    const listing = listings.find(l => l.id === listingId);
+    if(listing){
+      if(!listing.replies) listing.replies = [];
+      listing.replies.push({ author: currentUser.name, message: message.trim() });
+      await window.storage.set(VAMPWORK_KEY, JSON.stringify(listings), true);
+      loadVampWork();
+    }
+  } catch(err){ console.error(err); }
+}
+
+document.querySelectorAll('[data-vwfilter]').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('[data-vwfilter]').forEach(b => b.classList.toggle('current', b === btn));
+    vwCurrentFilter = btn.dataset.vwfilter;
+    loadVampWork();
+  });
+});
+
+document.getElementById('vwPostBtn').addEventListener('click', async ()=>{
+  const status = document.getElementById('vwStatus');
+  const type = document.getElementById('vwType').value;
+  const title = document.getElementById('vwTitle').value.trim();
+  const budget = document.getElementById('vwBudget').value.trim();
+  const desc = document.getElementById('vwDesc').value.trim();
+  const contact = document.getElementById('vwContact').value.trim();
+
+  if(!currentUser || currentUser.plan === 'Guest'){
+    status.textContent = 'Log in to post a listing.';
+    return;
+  }
+  if(!title || !budget || !contact){
+    status.textContent = 'Title, budget/rate, and contact are required.';
+    return;
+  }
+
+  status.textContent = 'Posting…';
+  try{
+    const res = await window.storage.get(VAMPWORK_KEY, true);
+    const listings = res ? JSON.parse(res.value) : [];
+    listings.push({
+      id: Date.now() + '-' + Math.random().toString(36).slice(2, 8),
+      type, title, budget, desc, contact,
+      postedBy: currentUser.name, time: Date.now(), replies: []
+    });
+    await window.storage.set(VAMPWORK_KEY, JSON.stringify(listings), true);
+    document.getElementById('vwTitle').value = '';
+    document.getElementById('vwBudget').value = '';
+    document.getElementById('vwDesc').value = '';
+    document.getElementById('vwContact').value = '';
+    status.textContent = '';
+    loadVampWork();
+  } catch(err){
+    console.error(err);
+    status.textContent = "Couldn't post — try again.";
+  }
+});
+
+// ---------- dashboards ----------
+async function getSharedList(key){
+  try{
+    const res = await window.storage.get(key, true);
+    return res ? JSON.parse(res.value) : [];
+  } catch(err){ return []; }
+}
+async function saveSharedList(key, list){
+  await window.storage.set(key, JSON.stringify(list), true);
+}
+
+function renderDashList(container, items, textFn, onDelete){
+  if(items.length === 0){
+    container.innerHTML = '<div class="dash-empty">Nothing here yet.</div>';
+    return;
+  }
+  container.innerHTML = '';
+  items.forEach((item, idx)=>{
+    const div = document.createElement('div');
+    div.className = 'dash-item';
+    div.innerHTML = `<div class="dash-item-text">${textFn(item)}</div><button class="dash-delete-btn">Delete</button>`;
+    div.querySelector('.dash-delete-btn').addEventListener('click', ()=> onDelete(item, idx));
+    container.appendChild(div);
+  });
+}
+
+async function loadDashboard(){
+  if(!currentUser || currentUser.plan === 'Guest'){
+    document.getElementById('dashName').textContent = 'Guest (not signed in)';
+    document.getElementById('dashEmail').textContent = '—';
+    document.getElementById('dashPlan').textContent = '—';
+    return;
+  }
+  document.getElementById('dashName').textContent = currentUser.name;
+  document.getElementById('dashEmail').textContent = currentUser.email;
+  document.getElementById('dashPlan').textContent = currentUser.plan;
+
+  const forumPosts = (await getSharedList(FORUM_KEY)).filter(p => p.author === currentUser.name);
+  renderDashList(document.getElementById('dashForum'), forumPosts,
+    p => `<b>${escapeHtmlForum(p.content.slice(0, 60))}${p.content.length > 60 ? '…' : ''}</b>${new Date(p.time).toLocaleDateString()}`,
+    async (item)=>{
+      const all = await getSharedList(FORUM_KEY);
+      await saveSharedList(FORUM_KEY, all.filter(p => !(p.author === item.author && p.time === item.time)));
+      loadDashboard();
+    });
+
+  const jobPosts = (await getSharedList(JOBS_KEY)).filter(j => j.postedBy === currentUser.name);
+  renderDashList(document.getElementById('dashJobs'), jobPosts,
+    j => `<b>${escapeHtmlForum(j.title)}</b>${escapeHtmlForum(j.company)}`,
+    async (item)=>{
+      const all = await getSharedList(JOBS_KEY);
+      await saveSharedList(JOBS_KEY, all.filter(j => !(j.title === item.title && j.time === item.time)));
+      loadDashboard();
+    });
+
+  const vwPosts = (await getSharedList(VAMPWORK_KEY)).filter(l => l.postedBy === currentUser.name);
+  renderDashList(document.getElementById('dashVampWork'), vwPosts,
+    l => `<b>${escapeHtmlForum(l.title)}</b>${l.type === 'hiring' ? 'Hiring' : 'Available'} · ${escapeHtmlForum(l.budget)}`,
+    async (item)=>{
+      const all = await getSharedList(VAMPWORK_KEY);
+      await saveSharedList(VAMPWORK_KEY, all.filter(l => l.id !== item.id));
+      loadDashboard();
+    });
+}
+
+async function loadAdmin(){
+  const forumPosts = await getSharedList(FORUM_KEY);
+  const jobPosts = await getSharedList(JOBS_KEY);
+  const vwPosts = await getSharedList(VAMPWORK_KEY);
+
+  document.getElementById('adminForumCount').textContent = forumPosts.length;
+  document.getElementById('adminJobsCount').textContent = jobPosts.length;
+  document.getElementById('adminVwCount').textContent = vwPosts.length;
+
+  renderDashList(document.getElementById('adminForumList'), forumPosts,
+    p => `<b>${escapeHtmlForum(p.author)}</b>${escapeHtmlForum(p.content.slice(0, 80))}${p.content.length > 80 ? '…' : ''}`,
+    async (item)=>{
+      const all = await getSharedList(FORUM_KEY);
+      await saveSharedList(FORUM_KEY, all.filter(p => !(p.author === item.author && p.time === item.time)));
+      loadAdmin();
+    });
+
+  renderDashList(document.getElementById('adminJobsList'), jobPosts,
+    j => `<b>${escapeHtmlForum(j.title)}</b>${escapeHtmlForum(j.company)} · posted by ${escapeHtmlForum(j.postedBy || 'unknown')}`,
+    async (item)=>{
+      const all = await getSharedList(JOBS_KEY);
+      await saveSharedList(JOBS_KEY, all.filter(j => !(j.title === item.title && j.time === item.time)));
+      loadAdmin();
+    });
+
+  renderDashList(document.getElementById('adminVwList'), vwPosts,
+    l => `<b>${escapeHtmlForum(l.title)}</b>${l.type} · ${escapeHtmlForum(l.budget)} · by ${escapeHtmlForum(l.postedBy)}`,
+    async (item)=>{
+      const all = await getSharedList(VAMPWORK_KEY);
+      await saveSharedList(VAMPWORK_KEY, all.filter(l => l.id !== item.id));
+      loadAdmin();
+    });
+}
+
+// ---------- chat ----------
+const thread = document.getElementById('thread');
+const inp
