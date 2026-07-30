@@ -2090,14 +2090,22 @@ async function sendMessage() {
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({ message })
+        body: JSON.stringify({
+            system: "You are Vamp AI, a helpful and intelligent AI assistant.",
+            messages: [
+                {
+                    role: "user",
+                    content: message
+                }
+            ]
+        })
     });
 
     const data = await response.json();
 
     document.getElementById("chat").innerHTML += `
         <p><b>You:</b> ${message}</p>
-        <p><b>AI:</b> ${data.reply}</p>
+        <p><b>Vamp AI:</b> ${data.reply || data.error}</p>
     `;
 
     document.getElementById("message").value = "";
